@@ -28,7 +28,7 @@ export function Footer() {
           </Link>
         </div>
       </div>
-      <div>
+      <div className='hidden'>
         <div className="grid grid-flow-col gap-4">
           {/* Social Media Links */}
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
