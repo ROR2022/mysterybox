@@ -1,0 +1,127 @@
+Épica Principal de MysteryBox (enfoque digital):
+
+"Ofrecer a los usuarios una experiencia digital sorpresa y personalizada cada mes, basada en sus intereses, que combine aprendizaje, recursos prácticos y acceso a eventos exclusivos, fomentando la exploración y el descubrimiento de nuevos temas."
+
+MVP (Minimum Viable Product):
+El MVP debe ser lo más simple posible, pero lo suficientemente atractivo para validar la idea con usuarios reales. Aquí un enfoque claro y escalable:
+
+Características principales del MVP:
+Registro y Perfil de Usuario:
+
+Los usuarios crean una cuenta y completan un perfil indicando sus intereses (ej: programación, marketing, fitness, fotografía, etc.).
+
+
+Suscripción Mensual:
+
+Integración con Stripe para gestionar pagos recurrentes.
+
+Dos planes: Básico y Premium.
+
+Entrega de la "Caja Digital":
+
+Cada mes, los usuarios reciben una caja digital con:
+
+Un recurso principal: Curso, guía o webinar.
+
+Un recurso adicional: Plantilla, ebook o herramienta descargable.
+
+El contenido se selecciona automáticamente en función de sus intereses.
+
+Interfaz de Usuario Sencilla:
+
+Un dashboard donde los usuarios puedan:
+
+Ver su caja digital del mes.
+
+Acceder a recursos anteriores.
+
+Actualizar sus preferencias.
+
+Gamificación Básica:
+
+Los usuarios ganan puntos por abrir su caja y completar experiencias.
+
+Un sistema de recompensas simple (ej: descuentos en suscripciones futuras).
+
+Tecnología para el MVP:
+Frontend: Next.js (con tailwindCSS y daisyUI) para una interfaz rápida y moderna.
+
+Backend: Next.js API routes.
+
+Base de datos: MongoDB para almacenar perfiles y preferencias.
+
+Autenticación: Auth.js 
+
+Pagos: Stripe para suscripciones recurrentes.
+
+Hosting: Vercel.
+
+Flujo de Trabajo del MVP:
+Paso 1: El usuario se registra y completa su perfil.
+
+Paso 2: Elige un plan de suscripción y realiza el pago.
+
+Paso 3: Recibe su primera caja digital con contenido personalizado.
+
+Paso 4: Interactúa con el contenido y gana puntos.
+
+Paso 5: Al final del mes, recibe una nueva caja digital.
+
+Contenido para el MVP:
+Para empezar, puedes enfocarte en un nicho específico. Por ejemplo:
+
+Desarrolladores:
+
+Curso: "Introducción a Next.js".
+
+Recurso: Plantilla de código para un proyecto básico.
+
+Emprendedores:
+
+Guía: "Cómo validar una idea de negocio".
+
+Recurso: Plantilla de plan de negocios.
+
+
+Creativos:
+
+Webinar: "Fotografía básica con tu smartphone".
+
+Recurso: Presets para edición de fotos.
+
+Métricas para validar el MVP:
+Tasa de registro: Cuántos usuarios completan el perfil y se suscriben.
+
+Retención: Cuántos usuarios renuevan su suscripción al segundo mes.
+
+Engagement: Cuántos usuarios interactúan con el contenido (completar cursos, descargar recursos).
+
+Feedback: Recolecta opiniones de los usuarios para mejorar.
+
+Cómo escalar después del MVP:
+Ampliar el catálogo de contenido:
+
+Añadir más cursos, guías y recursos.
+
+Colaborar con expertos para crear contenido exclusivo.
+
+Mejorar la personalización:
+
+Usar algoritmos de recomendación más avanzados.
+
+Añadir gamificación avanzada:
+
+Retos mensuales, rankings y recompensas más atractivas.
+
+Integrar una comunidad:
+
+Foros, chats o grupos para que los usuarios compartan sus experiencias.
+
+Resumen del MVP:
+Épica principal: Entregar una experiencia digital sorpresa y personalizada cada mes.
+
+Características clave: Registro, suscripción, caja digital mensual y gamificación básica.
+
+Nicho inicial: Enfócate en un grupo específico (ej: desarrolladores, emprendedores o creativos).
+
+Tecnología: Next.js, Stripe, MongoDB.

@@ -1,0 +1,110 @@
+Requerimientos Técnicos
+1. Tecnologías y Herramientas
+Frontend:
+
+Next.js (React).
+
+TailwindCSS (estilos).
+
+daisyUI (componentes preconstruidos).
+
+Backend:
+
+Next.js API routes.
+
+MongoDB (base de datos).
+
+Mongoose (ODM para MongoDB).
+
+Autenticación:
+
+Auth.js (manejo de usuarios).
+
+Pagos:
+
+Stripe (suscripciones recurrentes).
+
+Envío de Emails:
+
+Resend (emails transaccionales).
+
+Despliegue:
+
+Vercel (hosting y CI/CD).
+
+2. Requerimientos Funcionales
+Registro y Autenticación:
+
+Los usuarios pueden registrarse con email y con google.
+
+Los usuarios pueden iniciar sesión y cerrar sesión.
+
+Perfil de Usuario:
+
+Los usuarios pueden completar su perfil con sus intereses (Programación, Marketing, Fitness, Belleza, Live-coaching).
+
+Suscripciones:
+
+Los usuarios pueden suscribirse a un plan mensual (Básico o Premium).
+
+Los pagos se gestionan a través de Stripe.
+
+Cajas Digitales:
+
+Cada mes, los usuarios reciben una caja digital con contenido personalizado basado en sus intereses.
+
+El contenido incluye recursos como cursos, guías, plantillas y acceso a eventos.
+
+Gamificación:
+
+Los usuarios ganan puntos por abrir su caja digital y completar experiencias.
+
+Los puntos pueden canjearse por recompensas (ej: descuentos en suscripciones).
+
+Dashboard:
+
+Los usuarios pueden ver su caja digital del mes, el historial de cajas anteriores y sus puntos acumulados.
+
+Envío de Emails:
+
+Los usuarios reciben emails de confirmación de registro, notificación de nueva caja digital y recordatorios de suscripción.
+
+3. Requerimientos No Funcionales
+Rendimiento:
+
+La aplicación debe cargar en menos de 3 segundos.
+
+Escalabilidad:
+
+La arquitectura debe permitir escalar horizontalmente en caso de aumento de usuarios.
+
+Seguridad:
+
+Los datos sensibles (contraseñas, información de pago) deben estar encriptados.
+
+Implementar protección contra ataques comunes (XSS, CSRF, SQL injection).
+
+Disponibilidad:
+
+La aplicación debe tener un uptime del 99.9%.
+
+Usabilidad:
+
+La interfaz debe ser intuitiva y accesible (cumplir con estándares WCAG).
+
+4. Estructura de la Base de Datos (MongoDB)
+Usuarios:
+
+id, email, passwordHash, interests, subscriptionActive, points.
+
+Cajas Digitales:
+
+id, userId, content, date.
+
+Suscripciones:
+
+id, userId, plan, startDate, endDate.
+
+Puntos:
+
+id, userId, amount.

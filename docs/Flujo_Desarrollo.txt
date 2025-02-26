@@ -1,0 +1,75 @@
+Flujo de Desarrollo Detallado
+Configuración Inicial
+Inicializar el proyecto:
+
+npx create-next-app mysterybox
+
+Instalar dependencias: TailwindCSS, daisyUI, Mongoose, Auth.js, Resend.
+
+Configurar TailwindCSS y daisyUI:
+
+Seguir la documentación oficial para integrarlos en Next.js.
+
+Configurar MongoDB:
+
+Crear una base de datos en MongoDB Atlas.
+
+Conectar el proyecto usando Mongoose.
+
+
+
+
+Frontend Básico
+Desarrollar pantallas principales:
+
+Home, Registro/Login, Perfil, Dashboard, Suscripción.
+
+Integrar Auth.js:
+
+Configurar autenticación con email y contraseña.
+
+Crear componentes reutilizables:
+
+Navbar, Card, Button, Modal, etc.
+
+Backend y Lógica
+Desarrollar API endpoints:
+
+Autenticación, perfil, suscripciones, cajas digitales, puntos.
+
+Integrar Stripe:
+
+Configurar pagos recurrentes para suscripciones.
+
+Configurar Resend:
+
+Crear y enviar emails transaccionales.
+
+Pruebas y Ajustes
+Pruebas manuales:
+
+Verificar el flujo completo (registro, suscripción, entrega de caja digital).
+
+Corregir errores:
+
+Solucionar bugs y mejorar la experiencia de usuario.
+
+Despliegue y Lanzamiento
+Desplegar en Vercel:
+
+Conectar el repositorio y configurar variables de entorno.
+
+Lanzar el MVP:
+
+Promocionar en redes sociales y comunidades relacionadas.
+
+Resumen de la Arquitectura
+Frontend: Next.js + TailwindCSS + daisyUI.
+
+Backend: Next.js API routes + MongoDB.
+
+Autenticación: Auth.js.
+
+Emails: Resend.
+
+Despliegue: Vercel.

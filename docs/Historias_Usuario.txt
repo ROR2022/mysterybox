@@ -1,0 +1,69 @@
+Historias de Usuario
+1. Registro y Autenticación
+Como usuario nuevo,
+
+Quiero registrarme con mi email o con mi cuenta de google,
+
+Para poder acceder a la plataforma y recibir cajas digitales personalizadas.
+
+Como usuario registrado,
+
+Quiero iniciar sesión con mi email o google,
+
+Para acceder a mi perfil y dashboard.
+
+2. Perfil de Usuario
+Como usuario,
+
+Quiero completar mi perfil con mis intereses,
+
+Para recibir cajas digitales personalizadas basadas en mis preferencias.
+
+3. Suscripciones
+Como usuario,
+
+Quiero suscribirme a un plan mensual,
+
+Para recibir cajas digitales cada mes.
+
+Como usuario,
+
+Quiero cancelar mi suscripción,
+
+Para dejar de recibir cajas digitales y pagos recurrentes.
+
+4. Cajas Digitales
+Como usuario suscrito,
+
+Quiero recibir una caja digital cada mes,
+
+Para explorar nuevos temas y recursos relacionados con mis intereses.
+
+5. Gamificación
+Como usuario,
+
+Quiero ganar puntos por abrir mi caja digital y completar experiencias,
+
+Para canjearlos por recompensas.
+
+6. Dashboard
+Como usuario,
+
+Quiero ver mi caja digital del mes, el historial de cajas anteriores y mis puntos acumulados,
+
+Para tener un resumen de mi actividad en la plataforma.
+
+7. Envío de Emails
+Como usuario,
+
+Quiero recibir emails de confirmación de registro, notificación de nueva caja digital y recordatorios de suscripción,
+
+Para estar al tanto de mi actividad en la plataforma.
+
+8. Administración de Contenido
+Como administrador,
+
+Quiero agregar y gestionar contenido para las cajas digitales,
+
+Para asegurar que los usuarios reciban recursos de calidad.
+

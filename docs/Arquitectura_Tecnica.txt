@@ -1,0 +1,102 @@
+Arquitectura Técnica
+1. Frontend (Next.js + TailwindCSS + daisyUI)
+Next.js: Será el núcleo de la aplicación, tanto para el frontend como para el backend (API routes).
+
+TailwindCSS: Para estilar los componentes de manera rápida y eficiente.
+
+daisyUI: Un complemento perfecto para TailwindCSS, que te proporciona componentes preconstruidos y personalizables (botones, cards, modales, etc.).
+
+Tareas:
+
+Configurar TailwindCSS y daisyUI en el proyecto Next.js.
+
+Crear componentes reutilizables (navbar, cards, forms, etc.).
+
+Desarrollar las pantallas principales: Home, Registro/Login, Perfil, Dashboard, Suscripción.
+
+2. Backend (Next.js API routes + MongoDB)
+Next.js API routes: Para crear endpoints que gestionen la lógica del backend (autenticación, suscripciones, entrega de contenido, etc.).
+
+MongoDB: Como base de datos NoSQL para almacenar usuarios, suscripciones, cajas digitales y puntos.
+
+Tareas:
+
+Configurar la conexión a MongoDB usando Mongoose (ODM para MongoDB).
+
+Crear modelos para:
+
+Usuarios: email, contraseña (hash), intereses, suscripción_activa.
+
+Cajas digitales: usuario_id, contenido, fecha.
+
+Puntos: usuario_id, cantidad.
+
+Desarrollar endpoints para:
+
+Autenticación (registro, login, logout).
+
+Gestión de perfil (actualizar intereses).
+
+Suscripciones (integrar Stripe).
+
+Entrega de cajas digitales (asignar contenido basado en intereses).
+
+Gamificación (sumar puntos, mostrar ranking).
+
+3. Autenticación (Auth.js)
+Auth.js: Una librería moderna y flexible para autenticación en Next.js. Soporta múltiples proveedores (email, Google, GitHub, etc.).
+
+Tareas:
+
+Configurar Auth.js para manejar autenticación con email y contraseña.
+
+Proteger rutas privadas (ej: Dashboard, Perfil).
+
+Integrar con MongoDB para guardar usuarios.
+
+4. Envío de Emails (Resend)
+Resend: Una herramienta sencilla y eficiente para enviar emails transaccionales (confirmación de registro, recordatorios de suscripción, etc.).
+
+Tareas:
+
+Configurar Resend en el proyecto.
+
+Crear plantillas de email para:
+
+Confirmación de registro.
+
+Notificación de nueva caja digital.
+
+Recordatorios de suscripción.
+
+5. Contenido Inicial
+Categorías: Programación, Marketing, Fitness, Belleza, Live-coaching.
+
+Recursos:
+
+Programación: Curso de Next.js, plantilla de código.
+
+Marketing: Guía de SEO, plantilla de plan de marketing.
+
+Fitness: Rutina de ejercicios, guía de nutrición.
+
+Belleza: Tutorial de maquillaje, guía de cuidado de piel.
+
+Live-coaching: Acceso a consejos con herramienta de IA.
+
+Tareas:
+
+Crear el contenido inicial para cada categoría.
+
+Almacenar los recursos en MongoDB o en un servicio de almacenamiento (ej: AWS S3).
+
+6. Despliegue (Vercel)
+Vercel: La plataforma ideal para desplegar aplicaciones Next.js. Ofrece integración continua, escalabilidad y alto rendimiento.
+
+Tareas:
+
+Configurar el proyecto en Vercel.
+
+Conectar el repositorio de GitHub/GitLab para despliegues automáticos.
+
+Configurar variables de entorno (ej: conexión a MongoDB, claves de Stripe y Resend).
