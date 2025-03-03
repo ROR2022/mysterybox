@@ -14,10 +14,12 @@ import { MongoClient, ServerApiVersion } from "mongodb";
   };
   
   let client;
-  let clientPromise: Promise<MongoClient>;
+  let clientPromise;
   
   if (process.env.NODE_ENV === "development") {
-    const globalWithMongo = global as typeof global & { _mongoClientPromise?: Promise<MongoClient> };
+    const globalWithMongo = global as typeof globalThis & {
+      _mongoClientPromise: Promise<MongoClient> | undefined;
+    };
     globalWithMongo._mongoClientPromise = undefined;
   
     if (!globalWithMongo._mongoClientPromise) {

@@ -6,17 +6,27 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "migrate:user-dates": "ts-node -P tsconfig.node.json scripts/migrations/updateUserDates.ts"
   },
   "dependencies": {
     "@auth/mongodb-adapter": "^3.7.4",
+    "@stripe/stripe-js": "^5.7.0",
+    "browserify-zlib": "^0.2.0",
+    "crypto-browserify": "^3.12.1",
     "mongodb": "^6.13.1",
     "mongoose": "^8.10.1",
     "mysterybox": "file:",
     "next": "15.1.7",
     "next-auth": "^5.0.0-beta.25",
+    "path-browserify": "^1.0.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-hot-toast": "^2.5.2",
+    "stream-browserify": "^3.0.0",
+    "stripe": "^17.7.0",
+    "util": "^0.12.5",
+    "webpack": "^5.98.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -24,10 +34,12 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "daisyui": "^4.12.24",
+    "dotenv": "^16.4.7",
     "eslint": "^9",
     "eslint-config-next": "15.1.7",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
   }
 }

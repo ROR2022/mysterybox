@@ -1,7 +1,12 @@
 //import Image from "next/image";
 import Link from 'next/link';
+import { auth } from '@/auth';
+//import { redirect } from 'next/navigation';
+export default async function Home() {
+  const session = await auth();
 
-export default function Home() {
+  
+
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
@@ -13,7 +18,7 @@ export default function Home() {
               Descubre experiencias digitales sorpresa personalizadas cada mes.
               Aprende, explora y crece con contenido seleccionado especialmente para ti.
             </p>
-            <Link href="/auth/signin" className="btn btn-primary">
+            <Link href={session ? "/dashboard" : "/auth/signin"} className="btn btn-primary">
               Comenzar Ahora
             </Link>
           </div>
@@ -63,14 +68,14 @@ export default function Home() {
             <div className="card bg-base-100 shadow-xl">
               <div className="card-body">
                 <h3 className="card-title text-secondary">Plan Básico</h3>
-                <div className="text-3xl font-bold my-4">$9.99/mes</div>
+                <div className="text-3xl font-bold my-4">$5.00 USD/mes</div>
                 <ul className="space-y-2">
                   <li>✓ 1 experiencia digital al mes</li>
                   <li>✓ Acceso a la comunidad</li>
                   <li>✓ Sistema de puntos básico</li>
                 </ul>
                 <div className="card-actions justify-end mt-4">
-                  <Link href="/auth/signin" className="btn btn-primary">
+                  <Link href={session ? "/dashboard" : "/auth/signin"} className="btn btn-primary">
                     Seleccionar Plan
                   </Link>
                 </div>
@@ -81,7 +86,7 @@ export default function Home() {
               <div className="card-body">
                 <div className="badge badge-primary mb-2">Más Popular</div>
                 <h3 className="card-title text-secondary">Plan Premium</h3>
-                <div className="text-3xl font-bold my-4">$19.99/mes</div>
+                <div className="text-3xl font-bold my-4">$10.00 USD/mes</div>
                 <ul className="space-y-2">
                   <li>✓ 3 experiencias digitales al mes</li>
                   <li>✓ Acceso prioritario a eventos</li>
@@ -89,7 +94,7 @@ export default function Home() {
                   <li>✓ Contenido exclusivo</li>
                 </ul>
                 <div className="card-actions justify-end mt-4">
-                  <Link href="/auth/signin" className="btn btn-primary">
+                  <Link href={session ? "/dashboard" : "/auth/signin"} className="btn btn-primary">
                     Seleccionar Plan
                   </Link>
                 </div>
@@ -110,7 +115,7 @@ export default function Home() {
             digitales cada mes. Tu próxima aventura de aprendizaje está a un clic de
             distancia.
           </p>
-          <Link href="/auth/signin" className="btn btn-primary btn-lg">
+          <Link href={session ? "/dashboard" : "/auth/signin"} className="btn btn-primary btn-lg">
             Crear Cuenta
           </Link>
         </div>
