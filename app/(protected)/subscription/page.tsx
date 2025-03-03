@@ -11,6 +11,7 @@ export default async function SubscriptionPage() {
   }
 
   const prices = await getSubscriptionPlans();
+  console.log('prices:...', prices);
 
   return (
     <div className="space-y-8">
