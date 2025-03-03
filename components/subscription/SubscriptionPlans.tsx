@@ -10,7 +10,7 @@ interface SubscriptionPlansProps {
   userEmail: string;
 }
 
-const BASIC_PRICE = process.env.NEXT_PUBLIC_BASIC_PRICE;
+/* const BASIC_PRICE = process.env.NEXT_PUBLIC_BASIC_PRICE;
 const PREMIUM_PRICE = process.env.NEXT_PUBLIC_PREMIUM_PRICE;
 const prices_stripe = [
   {
@@ -37,7 +37,7 @@ const prices_stripe = [
     ]
   }
 ];
-
+ */
 //eslint-disable-next-line @typescript-eslint/no-unused-vars
 export function SubscriptionPlans({ prices, userEmail }: SubscriptionPlansProps) {
   const [isLoading, setIsLoading] = useState<string | null>(null);
@@ -95,10 +95,10 @@ export function SubscriptionPlans({ prices, userEmail }: SubscriptionPlansProps)
 
   return (
     <div className="grid md:grid-cols-2 gap-8">
-      {prices_stripe.map((price) => {
-        const product = {...price};
+      {prices.map((price) => {
+        const product = price.product as Stripe.Product;
         //console.log('product:...', product);
-        const isBasic = product.name.toLowerCase().includes('básico');
+        const isBasic = product.name.toLowerCase().includes('basic');
         
         return (
           <div
@@ -115,7 +115,7 @@ export function SubscriptionPlans({ prices, userEmail }: SubscriptionPlansProps)
                 )}
               </h2>
               <p className="text-3xl font-bold my-4">
-                {formatPrice(price.amount)}
+                {formatPrice(price.unit_amount || 0)}
                 <span className="text-base font-normal">/mes</span>
               </p>
               <ul className="space-y-2 my-4">
